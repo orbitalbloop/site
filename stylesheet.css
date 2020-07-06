@@ -1,0 +1,32 @@
+<style>
+
+html { 
+	background-color: black; 
+	margin: auto; }	
+
+body {
+	background-color: black; 
+	border: 4px solid #FFFFFF; 
+	max-width: 800px; 
+	margin: auto; 
+	padding: 20px;
+	margin-top: 5%;
+	}
+	
+pageslist {
+	border: 2px solid #FFFFFF;
+	}
+	
+h1   {
+	color: #000000; 
+	font-family: "Calibri", Times, serif;}
+
+p    {
+	color: black;
+	font-family: "Calibri", Times, serif;
+	font-size: 20px;
+	max-width: 780px; }
+	
+
+	
+</style>
