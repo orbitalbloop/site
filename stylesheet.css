@@ -2,7 +2,9 @@
 
 html { 
 	background-color: black; 
-	margin: auto; }	
+	margin: auto;
+  overflow: hidden;
+	}	
 
 body {
 	background-color: black; 
@@ -11,6 +13,8 @@ body {
 	margin: auto; 
 	padding: 20px;
 	margin-top: 5%;
+	overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
 	}
 	
 pageslist {
@@ -18,14 +22,21 @@ pageslist {
 	}
 	
 h1   {
-	color: #000000; 
-	font-family: "Calibri", Times, serif;}
+	color: #FFFFFF; 
+	font-family: "Courier", Times, serif;}
 
 p    {
-	color: black;
-	font-family: "Calibri", Times, serif;
+	color: white;
+	font-family: "Courier", Times, serif;
 	font-size: 20px;
 	max-width: 780px; }
+	
+#link_bar a { padding:15px; font-weight:bold; float:left; font-family: "Courier", Times, serif;}
+#link_bar a:link { color:#d0d0d0; background-color:#332E3E; }
+#link_bar a:visited { color:#c0c0c0; background-color:#332E3E; }
+#link_bar a:hover { color:#ffffff; background-color:#4E385C; }
+#link_bar a:active { color:#f0f0f0; background-color:#F468F0; }
+
 	
 
 	
