@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script type="text/javascript" src="tilesetgenerator.js">generate(document.getElementById('canvas'),'16','16','10','10','#ff9999','#99ccff')</script>
+
+<center>
+<h1>Tileset template generator</h1>
+
+<table>
+    <!-- tile width/height -->
+    <tr>
+        <th><label for="tile_w">Tile width:</label></th>
+        <th><input type="number" id="tile_w" name="tile_w" min="0" value="16"></th>
+        <th><label for="tile_h">Tile height:</label></th>
+        <th><input type="number" id="tile_h" name="tile_h" min="0" value="16"></th>
+    </tr>
+    <!-- rows/columns -->
+    <tr>
+        <th><label for="rows">Rows:</label></th>
+        <th><input type="number" id="rows" name="rows" min="0" value="10"></th>
+        <th><label for="cols">Columns:</label></th>
+        <th><input type="number" id="cols" name="cols" min="0" value="10"></th>
+    </tr>
+
+    <tr>
+        <th><label for='col1'>Color 1:</label></th>
+        <th><input type="color" id='col1' name='col1' value='#ff9999'></th>
+        <th><label for='col2'>Color 2:</label></th>
+        <th><input type="color" id='col2' name='col2' value='#99ccff'></th>
+    </tr>
+</table>
+
+<!-- the actual canvas-->
+<canvas id="canvas" width='0' height='0'></canvas>
+<br>
+
+<!-- magic button -->
+<button type="button"
+onclick="generate(document.getElementById('canvas'),
+document.getElementById('tile_w').value,
+document.getElementById('tile_h').value,
+document.getElementById('rows').value,
+document.getElementById('cols').value,
+document.getElementById('col1').value,
+document.getElementById('col2').value);
+">
+Generate template</button>
+<br>
+<i>Right click -> save as to download</i>  
+
+
+
+</body>
+</html> 
