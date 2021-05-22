@@ -20,7 +20,7 @@ function download(canvas) {
 
     if (canvas.width * canvas.height > 0) {
         var link = document.createElement('a');
-        link.download = 'my-image.png';
+        link.download = 'tileset_template.png';
         link.href = image;
         link.click();
     }
