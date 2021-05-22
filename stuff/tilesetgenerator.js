@@ -13,3 +13,15 @@ function generate(canvas, tw, th, rs, cs, c1, c2) {
         }
     }
 }
+
+// https://www.sanwebe.com/snippet/downloading-canvas-as-image-dataurl-on-button-click
+function download(canvas) {
+    image = canvas.toDataURL('image/png', 1.0).replace('image/png', 'image/octet-stream');
+
+    if (canvas.width * canvas.height > 0) {
+        var link = document.createElement('a');
+        link.download = 'my-image.png';
+        link.href = image;
+        link.click();
+    }
+}

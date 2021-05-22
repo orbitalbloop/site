@@ -8,6 +8,11 @@
 <center>
 <h1>Tileset template generator</h1>
 
+<i>by <a href='https://twitter.com/orbitaldot'>orbitaldot</a></i>
+
+<br>
+<br>
+
 <table>
     <!-- tile width/height -->
     <tr>
@@ -32,8 +37,6 @@
     </tr>
 </table>
 
-<!-- the actual canvas-->
-<canvas id="canvas" width='0' height='0'></canvas>
 <br>
 
 <!-- magic button -->
@@ -47,8 +50,14 @@ document.getElementById('col1').value,
 document.getElementById('col2').value);
 ">
 Generate template</button>
+
+<button type="button" onclick="download(document.getElementById('canvas'))">Download</button>
 <br>
-<i>Right click -> save as to download</i>  
+<br>
+<hr>
+
+<!-- the actual canvas-->
+<canvas id="canvas" width='0' height='0'></canvas>
 
 
 
